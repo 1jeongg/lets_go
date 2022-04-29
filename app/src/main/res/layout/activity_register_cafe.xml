@@ -89,7 +89,7 @@
                 />
 
             <EditText
-                android:id="@+id/tag_input"
+                android:id="@+id/menu_input"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:hint="주요 메뉴를 입력해주세요."
@@ -115,7 +115,7 @@
                 />
 
             <EditText
-                android:id="@+id/name_input"
+                android:id="@+id/link_input"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:hint="링크을 입력해주세요."
@@ -279,7 +279,7 @@
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
         <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_register_all"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
