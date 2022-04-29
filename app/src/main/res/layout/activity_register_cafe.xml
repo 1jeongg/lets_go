@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".RegisterCafeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="413dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:text="식당/카페 등록하기"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/restaurant"
+            android:contentDescription="register_restaurant"
+            />
+
+        <EditText
+            android:id="@+id/restaurant_input"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="식당/카페의 이름을 입력해주세요."
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/location"
+                android:contentDescription="register_location"
+                />
+
+            <EditText
+                android:id="@+id/location_input"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="식당/카페의 위치를 입력해주세요."
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/food"
+                android:contentDescription="register_food"
+                />
+
+            <EditText
+                android:id="@+id/tag_input"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="주요 메뉴를 입력해주세요."
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/link"
+                android:contentDescription="register_link"
+                />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="링크을 입력해주세요."
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/time"
+                android:contentDescription="register_time"
+                />
+
+            <EditText
+                android:id="@+id/time_input"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:hint="운영시간을 입력해주세요."
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="태그 입력"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="장애인을 위한 서비스"
+            android:textSize="15dp"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#808080"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="점자메뉴판"/>
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="테이블서비스"/>
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="휠체어이동가능"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="아이동반보호자를 위한 서비스"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="#808080"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아기의자"/>
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="키즈메뉴"/>
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기저귀 교환대"
+                android:layout_marginStart="40dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수유실"/>
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:text="휠체어"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="어르신을 위한 서비스"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:background="#808080"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="큰글자메뉴판"/>
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="테이블서비스"/>
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="휠체어이동가능"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_register"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="등록하기"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

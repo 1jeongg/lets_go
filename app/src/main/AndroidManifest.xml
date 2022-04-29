@@ -10,11 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lets_go">
         <activity
+            android:name=".CafeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CafeMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterCafeActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
